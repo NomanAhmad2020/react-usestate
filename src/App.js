@@ -19,8 +19,14 @@ import "./style.css";
   const button3Click = () => {
     
       setCount(0);       // same count =0
+  };
 
+  const button4Click = () => {
+    
+        setCount(100);       // same count =100
+  
 };
+
   return (
     <>
        <h1> {count} </h1>
@@ -28,6 +34,7 @@ import "./style.css";
       <button onClick={button2Click}> - </button>
       <br></br>
       <button onClick={button3Click}> Reset </button>
+      <button onDoubleClick={button4Click}> Double Click to 100 </button>
     </>
 );
 };
