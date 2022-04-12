@@ -6,7 +6,7 @@ import "./style.css";
   
   //const state = useState();
   
-  const [count,setCount] = useState(1);
+  const [count,setCount] = useState(1);   // this line should be on top
 
   const buttonClick = () => {
       setCount(count+1);
