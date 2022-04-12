@@ -10,13 +10,15 @@ import "./style.css";
 
   const buttonClick = () => {
       setCount(count+1);
-  
-  };
-  const button2Click = () => {
-    // if (count == 0 ? 1 :count ){
-    //   return;
-    // }
+    };
+ 
+    const button2Click = () => {
+   
     setCount(count-1);
+  };
+  const button3Click = () => {
+    
+      setCount(0);       // same count =0
 
 };
   return (
@@ -24,6 +26,8 @@ import "./style.css";
        <h1> {count} </h1>
       <button onClick={buttonClick}> + </button>
       <button onClick={button2Click}> - </button>
+      <br></br>
+      <button onClick={button3Click}> Reset </button>
     </>
 );
 };
